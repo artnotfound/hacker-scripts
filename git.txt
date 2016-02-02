@@ -1,2 +1,5 @@
 # REMOVE UNTRACKED FILES
 git clean -f -d
+
+# DELETE ALL LOCAL & REMOTE BRANCHES 
+git branch | grep branchname | while read line ; do git push origin --delete $line && git branch -D $line ; done
