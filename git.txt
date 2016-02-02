@@ -3,3 +3,6 @@ git clean -f -d
 
 # DELETE ALL LOCAL & REMOTE BRANCHES 
 git branch | grep branchname | while read line ; do git push origin --delete $line && git branch -D $line ; done
+
+# SEE ALL MERGED LOCAL BRANCHES 
+ git fetch && git branch -r --merged origin/master | grep -v "master" | sed -e 's/origin\///'
