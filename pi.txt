@@ -1,0 +1,11 @@
+RASPIAN JESSE LOGIN PROMPT:
+
+# switch to manual login at startup
+
+ln -fs /lib/systemd/system/getty@.service \
+ /etc/systemd/system/getty.target.wants/getty@tty1.service
+
+# switch to auto login at startup
+
+ln -fs /etc/systemd/system/autologin@.service \
+ /etc/systemd/system/getty.target.wants/getty@tty1.service
