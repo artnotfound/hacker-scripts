@@ -9,3 +9,6 @@ ln -fs /lib/systemd/system/getty@.service \
 
 ln -fs /etc/systemd/system/autologin@.service \
  /etc/systemd/system/getty.target.wants/getty@tty1.service
+
+# wake a sleeping terminal via ssh
+echo -ne "\033[13]" > /dev/tty1
