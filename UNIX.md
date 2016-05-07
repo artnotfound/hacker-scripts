@@ -28,4 +28,9 @@ sudo mount -t vfat /dev/[drive_name] /media/usb -o uid=1000,gid=100,utf8,dmask=0
 ```
 
 
+run program via ssh show up on ssh'd hosts screen
+```
+run-program | sudo tee /dev/console >/dev/null
+```
+
 
