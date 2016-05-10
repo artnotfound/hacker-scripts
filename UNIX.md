@@ -32,5 +32,3 @@ run program via ssh show up on ssh'd hosts screen
 ```
 run-program | sudo tee /dev/console >/dev/null
 ```
-
-
