@@ -32,3 +32,9 @@ run program via ssh show up on ssh'd hosts screen
 ```
 run-program | sudo tee /dev/console >/dev/null
 ```
+
+copy all file types to a specific folder
+```bash
+cp `find -E . -regex '.*\.(jpg|png|mov|jpeg)'` ~/Manny/
+```
+
