@@ -37,3 +37,8 @@ copy all file types to a specific folder
 ```bash
 cp `find -E . -regex '.*\.(jpg|png|mov|jpeg)'` ~/Manny/
 ```
+
+delete all files of a certain type in current folder
+```bash
+find . -type f -iname \*.jpg -delete
+```
